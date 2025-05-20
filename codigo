@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Tesouro Reborn - Guia Definitivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Glacial+Indifference&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --rose: #FFD1DC;
+            --dark-rose: #F4AFB3;
+            --wine: #722F37;
+            --cream: #FFF9F5;
+        }
+        
+        body {
+            font-family: 'Glacial Indifference', sans-serif;
+            background-color: var(--cream);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--rose), var(--dark-rose));
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--wine);
+        }
+        
+        .book-cover {
+            width: 250px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 5px solid white;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            transform: rotate(-5deg);
+            transition: all 0.3s ease;
+        }
+        
+        .book-cover:hover {
+            transform: rotate(0deg) scale(1.05);
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--wine);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--dark-rose);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: var(--wine);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--wine);
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--wine);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #5a252b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(114, 47, 55, 0.3);
+        }
+        
+        .testimonial {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 30px 0;
+            border-left: 5px solid var(--dark-rose);
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--wine);
+            text-align: right;
+            font-style: italic;
+        }
+        
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .benefit-item {
+            flex-basis: 30%;
+            min-width: 250px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 2.5rem;
+            color: var(--wine);
+            margin-bottom: 15px;
+        }
+        
+        .price-box {
+            background: linear-gradient(135deg, var(--rose), var(--dark-rose));
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 40px 0;
+            border: 2px solid var(--wine);
+        }
+        
+        .price {
+            font-family: 'Cinzel', serif;
+            font-size: 3rem;
+            color: var(--wine);
+            margin: 20px 0;
+        }
+        
+        .bonus {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 30px 0;
+            text-align: center;
+            border: 1px dashed var(--dark-rose);
+        }
+        
+        .bonus-icon {
+            font-size: 3rem;
+            color: var(--wine);
+            margin-bottom: 15px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: var(--wine);
+            cursor: pointer;
+        }
+        
+        footer {
+            background-color: var(--wine);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .benefit-item {
+                flex-basis: 100%;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu Tesouro Reborn</h1>
+            <p class="subtitle">O Guia Essencial para Mães de Bebês Reborn</p>
+            <img src="https://i.ibb.co/nskhhNnB/Meu-Tesouro-Reborn-Capa.jpg" alt="Capa do livro Meu Tesouro Reborn" class="book-cover">
+            <a href="#oferta" class="cta-button">QUERO MEU GUIA AGORA</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="intro">
+            <h2>Cuide do Seu Bebê Artístico com Amor e Técnica</h2>
+            <p>Descubra os segredos para preservar a beleza do seu reborn e criar uma conexão emocional saudável.</p>
+            
+            <div class="testimonial">
+                <p>"Este guia transformou completamente minha forma de cuidar do meu reborn. Agora sei como preservar cada detalhe com técnicas profissionais!"</p>
+                <p class="testimonial-author">- Carla S., colecionadora</p>
+            </div>
+        </section>
+        
+        <section id="problema">
+            <h2>Você Pode Estar Cometendo Esses Erros</h2>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚠️</div>
+                    <h3>Danos à Pintura</h3>
+                    <p>Produtos errados podem arruinar o trabalho minucioso do artista</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚠️</div>
+                    <h3>Cabelos Embaraçados</h3>
+                    <p>Técnicas inadequadas de limpeza podem danificar os fios</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚠️</div>
+                    <h3>Vínculo Desequilibrado</h3>
+                    <p>É essencial manter a saúde emocional nessa relação especial</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solucao">
+            <h2>O Que Você Vai Aprender</h2>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Técnicas Profissionais</h3>
+                    <p>Métodos aprovados por artistas para conservação</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Rotinas de Cuidado</h3>
+                    <p>Passo a passo para manutenção perfeita</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Equilíbrio Emocional</h3>
+                    <p>Como cultivar uma relação saudável com seu reborn</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="oferta" class="price-box">
+            <h2>Garanta Seu Exemplar Hoje</h2>
+            <p>De <s>R$97,00</s> por apenas:</p>
+            <div class="price">R$47,00</div>
+            <p>ou 12x de R$4,79 no cartão</p>
+            <a href="#oferta" class="cta-button">COMPRAR AGORA</a>
+            <p>📘 Ebook em PDF + Bônus Exclusivo</p>
+        </section>
+        
+        <section id="bonus">
+            <div class="bonus">
+                <div class="bonus-icon">📸</div>
+                <h3>Bônus: Guia de Fotografia Profissional</h3>
+                <p>Aprenda técnicas para capturar imagens incríveis do seu reborn, com dicas de iluminação, enquadramento e cenários encantadores.</p>
+            </div>
+        </section>
+        
+        <section id="garantia">
+            <h2>Garantia de 7 Dias</h2>
+            <p>Se por qualquer motivo você não amar o guia, devolvemos seu dinheiro sem perguntas.</p>
+        </section>
+        
+        <section id="faq">
+            <h2>Dúvidas Frequentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Como recebo o material?</div>
+                <p>O acesso é imediato via e-mail após a confirmação do pagamento.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Posso imprimir o guia?</div>
+                <p>Sim! O PDF foi projetado para impressão caseira.</p>
+            </div>
+        </section>
+        
+        <section id="cta-final">
+            <a href="#oferta" class="cta-button">QUERO MEU GUIA + BÔNUS AGORA</a>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Meu Tesouro Reborn - Editora Borcielle</p>
+            <p>Este produto não substitui acompanhamento psicológico profissional</p>
+        </div>
+    </footer>
+</body>
+</html>
